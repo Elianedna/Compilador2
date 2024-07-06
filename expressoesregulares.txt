@@ -1,0 +1,37 @@
+Váriavel:
+ID-> [A-Za-z]|_{[A-Za-z]|_|[0-9]}^*
+
+Números Inteiros:
+INT-> [0-9]^+
+
+Números Reais:
+REAL-> [0-9]^+.[0-9]^+ 
+
+Identificadores:
+[a-zA-Z_$][a-zA-Z0-9_$]*: Identificador Java que pode começar com letras, sublinhados ou cifrões, seguido por letras, números, sublinhados ou cifrões.
+
+Palavras-chave:
+(public|private|protected|class|interface|enum|if|else|while|for|do|switch|case|break|continue|return|static|final|abstract|synchronized|volatile): Palavras-chave Java comuns.
+
+Literais de Texto:
+"([^"]|\\")*": String delimitada por aspas duplas.
+
+Comentários:
+//.*: Comentário de uma linha.
+/\*([^*]|\*+[^*/])*\*/: Comentário de várias linhas.
+
+Declarações de Variáveis:
+((int|double|float|long|short|byte|char|boolean)\s+[a-zA-Z_$][a-zA-Z0-9_$]*\s*(=\s*[^;]*)?\s*;?): Expressão regular para declarar variáveis primitivas em Java.
+([a-zA-Z_$][a-zA-Z0-9_$]*\s+[a-zA-Z_$][a-zA-Z0-9_$]*\s*(=\s*[^;]*)?\s*;?): Expressão regular para declarar variáveis de tipos personalizados em Java.
+
+Declarações de Método:
+(public|private|protected)?\s+(static)?\s+(final)?\s+(void|int|double|float|long|short|byte|char|boolean)\s+[a-zA-Z_$][a-zA-Z0-9_$]*\s*\([^)]*\)\s*{: Expressão regular para declarar métodos em Java.
+
+Expressões Condicionais:
+if\s*\([^)]*\)\s*{: Expressão regular para condicional "if" em Java.
+else\s*{: Expressão regular para condicional "else" em Java.
+(while|for|do)\s*\([^)]*\)\s*{: Expressão regular para loops em Java.
+
+Estruturas de Controle:
+switch\s*\([^)]*\)\s*{: Expressão regular para a estrutura de controle "switch" em Java.
+case\s+[^:]*:\s*: Expressão regular para casos em uma estrutura de controle "switch" em Java.

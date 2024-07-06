@@ -1,0 +1,9 @@
+package eliane;
+public class eliane
+{
+    public static void main()
+    {
+        int a;
+
+    }
+}
